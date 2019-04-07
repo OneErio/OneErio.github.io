@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+}
+
+/*初始化默认高度占满全屏*/
+html,
+body,
+#root{
+    height: 100%;
+}
+
+#root{
+    background: linear-gradient(to right, #dddddd, #eeeeee);
+}
+
+.header,
+.menu{
+    height: 64px;
+    background-color: #333333;
+}
+
+.header{
+    position: relative;
+    font-size:40px;
+    text-align: center;
+    color: white;
+    z-index: 10;
+}
+li{
+    font-size:32px;
+}
