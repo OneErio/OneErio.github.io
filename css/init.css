@@ -12,35 +12,116 @@ body,
 }
 
 #root{
+    /*top:0;*/
+    /*bottom:0;*/
     background: linear-gradient(to right, #dddddd, #eeeeee);
+    min-height:3000px;
+    overflow:auto;
 }
 
-.header,
 .menu{
-    height: 64px;
-    background-color: #333333;
+    position: relative;
+    height: 140px;
+    width:100%;
+    background-color: #00CACA;
 }
 
 .header{
-    position: relative;
-    font-size:40px;
+    position:absolute;
+    display:inline-block;
+    height: 68px;
+    left:0;
+    right: 0;
+    line-height: 68px;
+    font-size: 48px;
     text-align: center;
     color: white;
     z-index: 10;
 }
+
+.sec_header{
+    position:absolute;
+    top: 60px;
+    right: 40px;
+    line-height: 24px;
+    font-size: 24px;
+    color: white;
+}
+
+#logInfo{
+    position: absolute;
+    top: 108px;
+    right: 0;
+    height: 24px;
+    font-size: 24px;
+    color: white;
+}
+
+.content{
+    position: absolute;
+    left: 0;
+    top: 140px;
+}
+
 li{
     font-size:32px;
+}
+
+.pic2{
+    /*float:left;*/
+    width:600px;
+    overflow:auto;
+    margin:0 auto;
+    text-align: center;
+}
+
+.number_container{
+    float:left;
+    width:150px;
+    margin:20px;
+    height:150px;
+    background-color:#00CACA;
+    border-radius:75px;
+}
+
+.number{
+    height:150px;
+    line-height:150px;
+    font-size:64px;
+    display:block;
+    color:#FFF;
+    text-align:center;
 }
 
 .visual{
     height:400px;
 }
 
+/*.pic_num{*/
+    /*position: absolute;*/
+/*}*/
+
 #pic1{
-    width:60%;
+    width:600px;
+    margin:0 auto;
+    text-align: center;
+
 }
 
-img{
+#pic3{
+    width:600px;
+    margin:0 auto;
+    text-align: center;
+}
+
+.img1{
+    margin: 10px;
+    /*margin-right: 40px;*/
+    width:108px;
+    height:108px;
+}
+
+.img2{
     float:left;
     margin: 5px;
     width: 240px;
