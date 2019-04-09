@@ -31,3 +31,18 @@ body,
 li{
     font-size:32px;
 }
+
+.visual{
+    height:400px;
+}
+
+#pic1{
+    width:60%;
+}
+
+img{
+    float:left;
+    margin: 5px;
+    width: 240px;
+    height: 240px;
+}
