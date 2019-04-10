@@ -1,4 +1,53 @@
 bing=function(){
+    var myChart = echarts.init(document.getElementById('pic4'),'dark');
+
+    var option = {
+        title : {
+            text: '对开车时使用手机的看法',
+            subtext: '危险认知',
+            x:'center'
+        },
+        tooltip : {
+            trigger: 'item',
+            formatter: "{a} <br/>{b} : {c} ({d}%)"
+        },
+        legend: {
+            orient: 'vertical',
+            left: 'left',
+            data: ['非常危险','危险','有点危险','稍微危险','根本不危险']
+        },
+        series : [
+            {
+
+                type: 'pie',
+                radius : '55%',
+                center: ['50%', '60%'],
+                data:[
+                    {value:26, name:'非常危险'},
+                    {value:24, name:'危险'},
+                    {value:33, name:'有点危险'},
+                    {value:16, name:'稍微危险'},
+                    {value:2, name:'根本不危险'}
+                ],
+                itemStyle: {
+                    emphasis: {
+                        shadowBlur: 10,
+                        shadowOffsetX: 0,
+                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    }
+                }
+            }
+        ]
+    };
+
+    myChart.setOption(option);
+    return myChart;
+    // window.onresize = function() {
+    //     myChart2.resize();
+    // }
+}
+
+double_bing=function(){
     var myChart = echarts.init(document.getElementById('pic1'),'dark');
 
     // app.title = '嵌套环形图';
