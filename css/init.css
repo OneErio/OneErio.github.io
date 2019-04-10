@@ -15,7 +15,7 @@ body,
     /*top:0;*/
     /*bottom:0;*/
     background: linear-gradient(to right, #dddddd, #eeeeee);
-    min-height:4200px;
+    min-height:4000px;
     overflow:auto;
 }
 
@@ -61,9 +61,11 @@ body,
     position: absolute;
     left: 0;
     top: 140px;
+    bottom:0;
 }
 
 li{
+    list-style-type: lower-roman;
     font-size:32px;
     margin: 12px;
 }
@@ -150,10 +152,20 @@ li{
 }
 
 .img2{
-    float:left;
+    position:absolute;
+    /*float:left;*/
     margin: 0 20px;
     width: 180px;
     height: 180px;
+    top: 3600px;
+    right: 0;
+}
+
+.contact{
+    position:absolute;
+    top: 3600px;
+    right: 200px;
+    font-size:36px;
 }
 
 .img3{
